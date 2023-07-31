@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 */1 * * *"
 
 jobs:
   autogreen:
@@ -24,5 +24,5 @@ jobs:
           git config --local user.name "${{ github.actor }}"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "刮风这天，我试过握着你手"
+          git commit --allow-empty -m "有的人出门太久，已经忘了自己为什么要上路了"
           git push
