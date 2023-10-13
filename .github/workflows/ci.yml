@@ -24,5 +24,5 @@ jobs:
           git config --local user.name "${{ github.actor }}"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "有的人出门太久，已经忘了自己为什么要上路了。"
+          git commit --allow-empty -m "我希望兜兜转转之后那个人还是你。"
           git push
